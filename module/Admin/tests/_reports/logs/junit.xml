@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Admin Test Suite" tests="2" assertions="3" failures="0" errors="1" time="0.947015">
+    <testsuite name="Admin\Entity\AutenticacaoTest" file="/home/cezar/workspace/php/skell_example/module/Admin/tests/src/Admin/Entity/AutenticacaoTest.php" tests="2" assertions="3" failures="0" errors="1" time="0.947015">
+      <testcase name="testInsert" class="Admin\Entity\AutenticacaoTest" file="/home/cezar/workspace/php/skell_example/module/Admin/tests/src/Admin/Entity/AutenticacaoTest.php" line="13" assertions="3" time="0.557920"/>
+      <testcase name="testInsertInvalid" class="Admin\Entity\AutenticacaoTest" file="/home/cezar/workspace/php/skell_example/module/Admin/tests/src/Admin/Entity/AutenticacaoTest.php" line="27" assertions="0" time="0.389095">
+        <error type="Doctrine\DBAL\Exception\NotNullConstraintViolationException">Admin\Entity\AutenticacaoTest::testInsertInvalid
+Doctrine\DBAL\Exception\NotNullConstraintViolationException: An exception occurred while executing 'INSERT INTO admin_autenticacao (id_autenticacao, desc_tipo_autenticacao) VALUES (?, ?)' with params [1, null]:
+
+SQLSTATE[23502]: Not null violation: 7 ERRO:  valor nulo na coluna "desc_tipo_autenticacao" viola a restrição não-nula
+DETAIL:  Registro que falhou contém (1, null).
+
+/home/cezar/workspace/php/skell_example/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php:57
+/home/cezar/workspace/php/skell_example/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php:165
+/home/cezar/workspace/php/skell_example/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php:281
+/home/cezar/workspace/php/skell_example/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:1018
+/home/cezar/workspace/php/skell_example/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:378
+/home/cezar/workspace/php/skell_example/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:356
+/home/cezar/workspace/php/skell_example/module/Admin/tests/src/Admin/Entity/AutenticacaoTest.php:32
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

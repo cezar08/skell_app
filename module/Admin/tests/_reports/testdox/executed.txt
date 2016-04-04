@@ -1,0 +1,4 @@
+AdminEntityAutenticacao
+ [x] Insert
+ [ ] Insert invalid
+
